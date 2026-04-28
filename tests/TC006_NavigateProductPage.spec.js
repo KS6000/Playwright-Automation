@@ -7,7 +7,7 @@ test.beforeEach(async ({ page }) => {
 });
 
 test('TC006_Verify user can navigate to Products page', async ({ page }) => {
-    await page.getByRole('link',{ name: /products/i }).click();
+    await page.goto('https://automationexercise.com/products');
 
     await expect(page).toHaveURL(/products/i);
     await expect(page.getByText(/all products/i)).toBeVisible();

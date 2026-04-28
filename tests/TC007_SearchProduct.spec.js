@@ -7,7 +7,7 @@ test.beforeEach(async ({ page }) => {
 });
 
 test('TC007 - Verify user can search for a product', async ({ page }) => {
-  await page.getByRole('link', { name: /products/i }).click();
+  await page.goto('https://automationexercise.com/products');
 
   await expect(page).toHaveURL(/products/);
   await expect(page.getByText(/all products/i)).toBeVisible();

@@ -7,7 +7,7 @@ test.beforeEach(async ({ page }) => {
 });
 
 test('TC008 - Verify user can add product to cart', async ({ page }) => {
-  await page.getByRole('link', { name: /products/i }).click();
+  await page.goto('https://automationexercise.com/products');
 
   await expect(page).toHaveURL(/products/);
 
