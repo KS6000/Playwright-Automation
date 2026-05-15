@@ -1,5 +1,7 @@
 # Playwright Automation Framework
 
+[![Playwright Tests](https://github.com/KS6000/Playwright-Automation/actions/workflows/playwright.yml/badge.svg)](https://github.com/KS6000/Playwright-Automation/actions/workflows/playwright.yml)
+
 ## 📌 Overview
 End-to-end UI automation framework built using Playwright with JavaScript.
 
